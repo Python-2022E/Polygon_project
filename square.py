@@ -10,5 +10,3 @@ class Square:
 
     def perimeter(self):
         return self.square_side * 4
-
-

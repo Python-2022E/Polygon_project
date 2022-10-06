@@ -4,13 +4,15 @@ class Circle:
         self.radius = radius
         
     def is_valid(self) -> bool:
-        pass
+        return self.radius > 0
     
     def diameter(self):
-        pass
+        return self.radius *2
     
     def circumference(self) -> float:
-        pass
+        return 2*pi*self.radius
     
     def area(self) -> float:
-        pass
+        return pi*self.radius**2
+x = Circle(5)
+print(x.diameter())

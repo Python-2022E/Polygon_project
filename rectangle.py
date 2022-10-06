@@ -4,7 +4,9 @@ class Rectangle:
         self.b = b
 
     def is_valid(self) -> bool:
-        return self.a > 0 and self.b > 0
+        if self.a > 0 and self.b > 0:
+            return True
+        return False
 
     def perimeter(self):
         if self.is_valid():

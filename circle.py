@@ -1,16 +1,25 @@
 from math import pi
+
+
 class Circle:
-    def __init__(self, radius:float):
+    def __init__(self, radius: float):
         self.radius = radius
-        
+
     def is_valid(self) -> bool:
-        pass
-    
+        return self.radius > 0
+
     def diameter(self):
-        pass
-    
+
+        if self.is_valid():
+            return self.radius*2
+        return None
+
     def circumference(self) -> float:
-        pass
-    
+        if self.is_valid():
+            return self.radius*2*pi
+        return None
+
     def area(self) -> float:
-        pass
+        if self.is_valid():
+            return self.radius**2*pi
+        return None

@@ -1,12 +1,22 @@
 class Square:
-    def __init__(self, square_side:float):
+    def __init__(self, square_side: float):
         self.square_side = square_side
-    
+
     def is_valid(self) -> bool:
-        pass
-    
+        return self.square_side > 0
+
     def area(self):
-        pass
-    
+        x = self.is_valid() == True
+        if x:
+            return self.square_side**2
+        return None
+
     def perimeter(self):
-        pass
+        x = self.is_valid() == True
+        if x:
+            return self.square_side*4
+        return None
+
+
+x = Square(-1)
+print(x.area(), x.is_valid())

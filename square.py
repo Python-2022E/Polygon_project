@@ -3,10 +3,12 @@ class Square:
         self.square_side = square_side
     
     def is_valid(self) -> bool:
-        pass
+        return self.square_side > 0
     
     def area(self):
-        pass
-    
+        return self.square_side ** 2
+
     def perimeter(self):
-        pass
+        return self.square_side * 4
+
+

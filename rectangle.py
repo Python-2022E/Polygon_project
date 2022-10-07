@@ -4,10 +4,12 @@ class Rectangle:
         self.b = b
 
     def is_valid(self) -> bool:
-        pass
+        return self.a > 0 and self.b > 0
 
     def perimeter(self):
-        pass
+        return (self.a + self.b) * 2
 
     def area(self):
-       pass
+       return self.a * self.b
+
+

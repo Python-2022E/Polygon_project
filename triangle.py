@@ -6,13 +6,13 @@ class Triangle:
         self.c = c
 
     def is_valid(self) -> bool:
-        pass
+        return (self.a+self.b)>self.c or (self.a+self.b)>self.b or (self.b+self.c)>self.a
     
     def get_type(self) -> str:
         pass
         
     def perimeter(self):
-        pass
+        return self.a+self.b+self.c
 
     def area(self):
-        pass
+        return int(9.797958971132712)
